@@ -6,10 +6,14 @@ body {
 }
 
 .jumbotron {
-  padding-top: 2rem;
+  padding-top: 6rem;
   background-color: #df9f41;
 }
 
 #gallery {
   background-color: #df9f41;
+}
+
+section {
+  padding-top: 5rem;
 }
