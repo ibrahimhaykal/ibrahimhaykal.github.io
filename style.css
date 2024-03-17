@@ -25,7 +25,7 @@ section {
 /* Navbar Font Styling */
 .navbar-nav .nav-link {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px; /* Ukuran font navbar */
+  font-size: 30px; /* Ukuran font navbar */
   font-weight: bold; /* Font tebal */
 }
 
@@ -35,29 +35,34 @@ section {
   color: #FFD700 !important; /* Warna teks untuk navigasi aktif dan hover */
 }
 
+/* Jumbotron Text Styling */
+.jumbotron-text {
+  text-align: left;
+  padding-left: 10%; /* Adjust as needed */
+  padding-top: 5%; /* Adjust as needed */
+}
+
 .jumbotron-text h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: bold;
-  color: #C0C0C0;
 }
 
 .jumbotron-text h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 60px;
   font-weight: bold;
-  color: #C0C0C0;
 }
 
 .jumbotron-text p {
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: normal;
-  color: #C0C0C0;
 }
 
 .jumbotron-img {
+  float: right;
+  margin-right: 10%; /* Adjust as needed */
   text-align: right;
   margin-top: -20%; /* Sesuaikan kebutuhan */
 }
-
