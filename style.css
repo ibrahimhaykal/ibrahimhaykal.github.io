@@ -22,6 +22,10 @@ section {
 .navbar {
   background-color: transparent !important; /* Mengubah warna navbar menjadi transparan */
 }
+/* Navbar Font Styling */
+.navbar-nav .nav-link {
+  font-family: 'Poppins', sans-serif;
+}
 
 /* Navigasi Active */
 .navbar-nav .nav-item .nav-link.active,
