@@ -98,3 +98,18 @@ section {
 .social-icons a i {
   font-size: 30px;
 }
+/* Untuk tampilan desktop */
+@media (min-width: 992px) {
+  .icon-link {
+    padding-right: 250px; /* Padding kanan untuk tampilan desktop */
+  }
+}
+
+/* Untuk tampilan mobile dan tablet */
+@media (max-width: 991.98px) {
+  .icon-link {
+    padding-right: 0; /* Hilangkan padding kanan untuk tampilan mobile dan tablet */
+    margin-right: 20px; /* Atur margin kanan untuk menjaga jarak antar ikon */
+  }
+}
+
