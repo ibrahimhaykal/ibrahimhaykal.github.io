@@ -7,6 +7,7 @@
         refresh = setTimeout("action()", speed);
       }
       action();
+      
       const helloText = "Hello,";
       const nameText = "I am Ibrahim Haykal Alatas";
       const descriptionText = "Web Developer || IT Enthusiast Student || Cyber Security Learner";
@@ -14,16 +15,14 @@
       let helloIndex = 0;
       let nameIndex = 0;
       let descriptionIndex = 0;
-      let typingComplete = false;
     
       function typeWriterHello() {
         if (helloIndex < helloText.length) {
           document.getElementById("hello").innerHTML += helloText.charAt(helloIndex);
           helloIndex++;
           setTimeout(typeWriterHello, 100);
-        } else if (helloIndex === helloText.length && !typingComplete) {
-          setTimeout(eraseText, 1000);
-          typingComplete = true;
+        } else {
+          setTimeout(clearText, 3000);
         }
       }
     
@@ -43,34 +42,17 @@
         }
       }
     
-      function eraseText() {
-        const helloElement = document.getElementById("hello");
-        const nameElement = document.getElementById("name");
-        const descriptionElement = document.getElementById("description");
-    
-        const helloTextLength = helloElement.innerHTML.length;
-        const nameTextLength = nameElement.innerHTML.length;
-        const descriptionTextLength = descriptionElement.innerHTML.length;
-    
-        if (helloTextLength > 0) {
-          helloElement.innerHTML = helloElement.innerHTML.slice(0, -1);
-          setTimeout(eraseText, 100);
-        } else if (nameTextLength > 0) {
-          nameElement.innerHTML = nameElement.innerHTML.slice(0, -1);
-          setTimeout(eraseText, 100);
-        } else if (descriptionTextLength > 0) {
-          descriptionElement.innerHTML = descriptionElement.innerHTML.slice(0, -1);
-          setTimeout(eraseText, 100);
-        } else {
-          helloIndex = 0;
-          nameIndex = 0;
-          descriptionIndex = 0;
-          typingComplete = false;
-          setTimeout(typeWriterHello, 500);
-        }
+      function clearText() {
+        document.getElementById("hello").innerHTML = "";
+        document.getElementById("name").innerHTML = "";
+        document.getElementById("description").innerHTML = "";
+        helloIndex = 0;
+        nameIndex = 0;
+        descriptionIndex = 0;
+        setTimeout(typeWriterHello, 1000); // Restart the typing effect after 1 second
       }
     
       // Panggil fungsi untuk memulai efek mesin tik
-      typeWriterHello();
-      setTimeout(typeWriterName, helloText.length * 100);
-      setTimeout(typeWriterDescription, (helloText.length + nameText.length) * 100);
+      setTimeout(typeWriterHello, 1000); // Delay the typing effect by 1 second
+      setTimeout(typeWriterName, helloText.length * 100 + 1000);
+      setTimeout(typeWriterDescription, (helloText.length + nameText.length) * 100 + 1000);
