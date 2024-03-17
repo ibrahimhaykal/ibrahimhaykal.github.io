@@ -38,9 +38,9 @@ section {
 
 /* Jumbotron Text Styling */
 .jumbotron-text {
-  text-align: left;
+text-align: left;
   padding-left: 10%; /* Adjust as needed */
-  padding-top: 5%; /* Adjust as needed */
+  padding-top: 5rem; /* Mengatur margin atas agar sejajar dengan navbar */
 }
 
 .jumbotron-text h1 {
@@ -67,3 +67,4 @@ section {
   margin-right: 10%; /* Adjust as needed */
   margin-top: -20%; /* Adjust as needed */
 }
+
