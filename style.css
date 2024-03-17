@@ -23,3 +23,11 @@ section {
   background-color: transparent !important; /* Mengubah warna navbar menjadi transparan */
 }
 
+/* Navigasi Active */
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FFD700 !important; /* Warna teks untuk navigasi aktif dan hover */
+}
+
+
+
