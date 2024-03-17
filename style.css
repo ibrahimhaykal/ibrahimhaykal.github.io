@@ -69,3 +69,17 @@ section {
   text-align: right;
   margin-top: 0%; /* Sesuaikan kebutuhan */
 }
+
+/* Atur warna dasar tombol */
+.btn-primary {
+  font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: normal; width: 191px; height: 67px; border-radius: 15px;
+  background-color: #ffffff;
+  color: #000000; /* Warna teks hitam */
+  border-color: transparent; /* Hilangkan border */
+}
+
+/* Efek hover pada tombol */
+.btn-primary:hover {
+  background-color: #FFD700; /* Warna latar belakang saat dihover */
+  color: #000000; /* Warna teks saat dihover */
+}
