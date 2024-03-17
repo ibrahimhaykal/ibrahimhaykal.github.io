@@ -83,3 +83,18 @@ section {
   background-color: #FFD700; /* Warna latar belakang saat dihover */
   color: #000000; /* Warna teks saat dihover */
 }
+
+.social-icons a {
+  margin-right: 50px;
+}
+
+.social-icons {
+  margin-top: 30px; /* Mengurangi margin atas */
+  
+}
+.icon-link {
+  padding-right: 250px; /* Tambahkan padding kanan sebanyak 50px */
+}
+.social-icons a i {
+  font-size: 30px;
+}
