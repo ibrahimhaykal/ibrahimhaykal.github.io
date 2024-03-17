@@ -8,17 +8,27 @@
       }
       action();
 
-      function typewriter(element, text, delay) {
+      const texts = [
+        { element: document.getElementById('hello'), text: 'Hello,', delay: 100 },
+        { element: document.getElementById('name'), text: 'I am Ibrahim Haykal', delay: 100 },
+        { element: document.getElementById('lastname'), text: 'Alatas', delay: 100 },
+        { element: document.getElementById('description1'), text: 'Web Developer || IT Enthusiast', delay: 100 },
+        { element: document.getElementById('description2'), text: 'Student || Cyber Security Learner', delay: 100 }
+      ];
+      
+      function typewriter(text, index) {
         let i = 0;
         let interval = setInterval(() => {
-          element.innerHTML += text.charAt(i);
+          text.element.innerHTML += text.text.charAt(i);
           i++;
-          if (i > text.length) {
+          if (i > text.text.length) {
             clearInterval(interval);
+            if (index + 1 < texts.length) {
+              typewriter(texts[index + 1], index + 1);
+            }
           }
-        }, delay);
+        }, text.delay);
       }
       
-      typewriter(document.getElementById('hello'), 'Hello,', 100);
-      typewriter(document.getElementById('name'), 'I am Ibrahim Haykal<br>Alatas', 100);
-      typewriter(document.getElementById('description'), 'Web Developer || IT Enthusiast<br>Student || Cyber Security Learner', 100);      
+      typewriter(texts[0], 0);
+      
