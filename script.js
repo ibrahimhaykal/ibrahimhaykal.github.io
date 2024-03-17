@@ -18,16 +18,26 @@
       
       function typewriter(text, index) {
         let i = 0;
+        let isDeleting = false; // Variable to track whether the text is being deleted
+      
         let interval = setInterval(() => {
-          if (i < text.text.length) {
+          if (i < text.text.length && !isDeleting) {
             text.element.innerHTML += text.text.charAt(i);
             i++;
+          } else if (i > 0 && isDeleting) {
+            text.element.innerHTML = text.element.innerHTML.slice(0, -1); // Delete one character at a time
+            i--;
           } else {
-            clearInterval(interval);
-            setTimeout(() => {
-              text.element.innerHTML = ''; // Hapus teks sebelum memulai kembali
-              typewriter(texts[(index + 1) % texts.length], (index + 1) % texts.length); // Start again
-            }, 2000); // Tunggu 2 detik sebelum memulai kembali
+            isDeleting = !isDeleting; // Toggle the isDeleting variable
+            if (isDeleting) {
+              clearInterval(interval); // Stop interval briefly before starting again
+              setTimeout(() => {
+                typewriter(texts[(index + 1) % texts.length], (index + 1) % texts.length);
+              }, 1000); // Wait for 1 second before starting again
+            } else {
+              i = 0; // Reset index for the next cycle
+            }
           }
         }, text.delay);
-      }      
+      }
+      
