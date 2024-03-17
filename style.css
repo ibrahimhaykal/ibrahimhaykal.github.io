@@ -37,10 +37,11 @@ section {
 
 
 /* Jumbotron Text Styling */
+/* Jumbotron Text Styling */
 .jumbotron-text {
-text-align: left;
+  text-align: left;
   padding-left: 10%; /* Adjust as needed */
-  padding-top: 5rem; /* Mengatur margin atas agar sejajar dengan navbar */
+  padding-top: 5%; /* Adjust as needed */
 }
 
 .jumbotron-text h1 {
@@ -65,6 +66,6 @@ text-align: left;
 .jumbotron-img {
   float: right;
   margin-right: 10%; /* Adjust as needed */
-  margin-top: 10%; /* Adjust margin-top value to move the image down */
+  margin-top: -20%; /* Adjust as needed */
 }
 
