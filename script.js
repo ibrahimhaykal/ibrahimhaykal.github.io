@@ -8,33 +8,26 @@
       }
       action();
 
-      function startTypewriter() {
-        const texts = [
-          { element: document.getElementById('hello'), text: 'Hello,', delay: 100 },
-          { element: document.getElementById('name'), text: 'I am Ibrahim Haykal', delay: 100 },
-          { element: document.getElementById('lastname'), text: 'Alatas', delay: 100 },
-          { element: document.getElementById('description1'), text: 'Web Developer || IT Enthusiast', delay: 100 },
-          { element: document.getElementById('description2'), text: 'Student || Cyber Security Learner', delay: 100 }
-        ];
+      const texts = [
+        { element: document.getElementById('hello'), text: 'Hello,', delay: 100 },
+        { element: document.getElementById('name'), text: 'I am Ibrahim Haykal', delay: 100 },
+        { element: document.getElementById('lastname'), text: 'Alatas', delay: 100 },
+        { element: document.getElementById('description1'), text: 'Web Developer || IT Enthusiast', delay: 100 },
+        { element: document.getElementById('description2'), text: 'Student || Cyber Security Learner', delay: 100 }
+      ];
       
-        function typewriter(text, index) {
-          let i = 0;
-          let interval = setInterval(() => {
-            text.element.innerHTML += text.text.charAt(i);
-            i++;
-            if (i > text.text.length) {
-              clearInterval(interval);
-              if (index + 1 < texts.length) {
-                typewriter(texts[index + 1], index + 1);
-              } else {
-                setTimeout(startTypewriter, 2000); // Memanggil fungsi typewriter setelah 2 detik
-              }
-            }
-          }, text.delay);
-        }
-        
-        typewriter(texts[0], 0);
+      function typewriter(text, index) {
+        let i = 0;
+        let interval = setInterval(() => {
+          text.element.innerHTML += text.text.charAt(i);
+          i++;
+          if (i > text.text.length) {
+            clearInterval(interval);
+            setTimeout(() => {
+              text.element.innerHTML = ''; // Clear text
+              typewriter(texts[0], 0); // Start again
+            }, 2000); // Wait for 2 seconds before starting again
+          }
+        }, text.delay);
       }
-      
-      startTypewriter(); // Memulai animasi typewriter
       

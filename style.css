@@ -6,6 +6,7 @@ body {
 }
 
 .jumbotron {
+  position: absolute;
   padding-top: 6rem;
   background-color: #002366 !important;
 }
@@ -39,8 +40,8 @@ section {
 /* Jumbotron Text Styling */
 .jumbotron-text {
   text-align: left;
-  padding-left: 10%; /* Adjust as needed */
-  padding-top: 5rem; /* Mengatur margin atas agar sejajar dengan navbar */
+  padding-left: 10%; /* Sesuaikan kebutuhan Anda */
+  padding-top: 8%; /* Sesuaikan kebutuhan Anda agar sejajar dengan navbar */
 }
 
 .jumbotron-text h1 {
