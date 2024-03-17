@@ -13,7 +13,7 @@
         { element: document.getElementById('name'), text: 'I am Ibrahim Haykal', delay: 100 },
         { element: document.getElementById('lastname'), text: 'Alatas', delay: 100 },
         { element: document.getElementById('description1'), text: 'Web Developer || IT Enthusiast', delay: 100 },
-        { element: document.getElementById('description3'), text: 'Student || Cyber Security Learner', delay: 100 }
+        { element: document.getElementById('description2'), text: 'Student || Cyber Security Learner', delay: 100 }
       ];
       
       function typewriter(text, index) {
