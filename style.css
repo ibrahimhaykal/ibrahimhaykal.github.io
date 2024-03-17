@@ -29,5 +29,35 @@ section {
   color: #FFD700 !important; /* Warna teks untuk navigasi aktif dan hover */
 }
 
+/* Jumbotron Text Styling */
+.jumbotron-text {
+  text-align: left;
+  padding-left: 10%; /* Adjust as needed */
+  padding-top: 5%; /* Adjust as needed */
+}
+
+.jumbotron-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.jumbotron-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.jumbotron-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.jumbotron-img {
+  float: right;
+  margin-right: 10%; /* Adjust as needed */
+  margin-top: 5%; /* Adjust as needed */
+}
 
 
