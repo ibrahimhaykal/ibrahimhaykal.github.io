@@ -19,15 +19,15 @@
       function typewriter(text, index) {
         let i = 0;
         let interval = setInterval(() => {
-          text.element.innerHTML += text.text.charAt(i);
-          i++;
-          if (i > text.text.length) {
+          if (i < text.text.length) {
+            text.element.innerHTML += text.text.charAt(i);
+            i++;
+          } else {
             clearInterval(interval);
             setTimeout(() => {
-              text.element.innerHTML = ''; // Clear text
-              typewriter(texts[0], 0); // Start again
-            }, 2000); // Wait for 2 seconds before starting again
+              text.element.innerHTML = ''; // Hapus teks sebelum memulai kembali
+              typewriter(texts[(index + 1) % texts.length], (index + 1) % texts.length); // Start again
+            }, 2000); // Tunggu 2 detik sebelum memulai kembali
           }
         }, text.delay);
-      }
-      
+      }      
