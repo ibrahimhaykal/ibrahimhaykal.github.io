@@ -25,7 +25,7 @@ section {
 /* Navbar Font Styling */
 .navbar-nav .nav-link {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px; /* Ukuran font navbar */
+  font-size: 30px; /* Ukuran font navbar */
   font-weight: bold; /* Font tebal */
 }
 
@@ -35,8 +35,6 @@ section {
   color: #FFD700 !important; /* Warna teks untuk navigasi aktif dan hover */
 }
 
-
-/* Jumbotron Text Styling */
 /* Jumbotron Text Styling */
 .jumbotron-text {
   text-align: left;
@@ -62,10 +60,9 @@ section {
   font-weight: normal;
 }
 
-/* Jumbotron Image Styling */
 .jumbotron-img {
   float: right;
   margin-right: 10%; /* Adjust as needed */
-  margin-top: -20%; /* Adjust as needed */
+  margin-top: 5%; /* Adjust as needed */
 }
 
