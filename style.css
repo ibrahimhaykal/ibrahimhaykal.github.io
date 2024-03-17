@@ -9,7 +9,6 @@ body {
   position: absolute;
   padding-top: 6rem;
   background-color: #002366 !important;
-  transform: translateY(-50%);
 }
 
 #gallery {
@@ -22,7 +21,6 @@ section {
 
 /* Navbar */
 .navbar {
-  padding-left: 10%; 
   background-color: transparent !important; /* Mengubah warna navbar menjadi transparan */
 }
 /* Navbar Font Styling */
@@ -37,7 +35,6 @@ section {
 .navbar-nav .nav-item .nav-link:hover {
   color: #FFD700 !important; /* Warna teks untuk navigasi aktif dan hover */
 }
-
 
 /* Jumbotron Text Styling */
 .jumbotron-text {
