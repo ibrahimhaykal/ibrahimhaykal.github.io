@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+.custom-navbar {
+  margin-left: 20px; /* Sesuaikan jarak sesuai kebutuhan */
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #002366 !important;
