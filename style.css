@@ -40,7 +40,7 @@ section {
 .jumbotron-text {
   text-align: left;
   padding-left: 10%; /* Adjust as needed */
-  padding-top: 5%; /* Adjust as needed */
+  padding-top: 5rem; /* Mengatur margin atas agar sejajar dengan navbar */
 }
 
 .jumbotron-text h1 {
@@ -63,8 +63,9 @@ section {
 
 /* Jumbotron Image Styling */
 .jumbotron-img {
-  float: right;
-  margin-right: 10%; /* Adjust as needed */
-  margin-top: -20%; /* Adjust as needed */
+  position: absolute; /* Menggunakan posisi absolut */
+  top: 50%; /* Menempatkan profil gambar di tengah vertikal */
+  right: 10%; /* Adjust as needed */
+  transform: translateY(-50%); /* Untuk menyesuaikan posisi secara tepat */
 }
 
