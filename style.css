@@ -63,6 +63,6 @@ section {
 .jumbotron-img {
   float: right;
   margin-right: 10%; /* Adjust as needed */
-  margin-top: 5%; /* Adjust as needed */
+  margin-top: -20%; /* Adjust as needed */
 }
 
