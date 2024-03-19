@@ -109,11 +109,34 @@ section {
   }
 }
 
-/* Untuk tampilan mobile dan tablet */
-@media (max-width: 991.98px) {
-  .icon-link {
-    padding-right: 0; /* Hilangkan padding kanan untuk tampilan mobile dan tablet */
-    margin-right: 20px; /* Atur margin kanan untuk menjaga jarak antar ikon */
+/* Untuk tampilan desktop */
+@media (min-width: 992px) {
+  .social-icons a.icon-link {
+    padding-right: 250px; /* Padding kanan untuk tampilan desktop */
   }
 }
+
+/* Untuk tampilan desktop dengan lebar antara 995px dan 1999px */
+@media (min-width: 995px) and (max-width: 1999px) {
+  .social-icons a.icon-link {
+    padding-right: 180px; /* Atur padding kanan untuk tampilan desktop di rentang lebar tertentu */
+  }
+}
+
+@media(min-width: 768px) and (max-width: 994px){
+  .social-icons a.icon-link {
+    padding-right: 10px; /* Atur padding kanan untuk tampilan desktop di rentang lebar tertentu */
+  }
+
+}
+
+@media(min-width: 103px) and (max-width: 510px){
+  .social-icons a.icon-link {
+    padding-right: 20px; /* Atur padding kanan untuk tampilan desktop di rentang lebar tertentu */
+  }
+
+}
+
+
+
 
